@@ -1,4 +1,11 @@
+@import 'normalize';
+@import 'colors';
+@import 'fonts';
 @import 'modal';
+
+body{
+  font-family: $default-font;
+}
 
 table {
   border-collapse: collapse;
