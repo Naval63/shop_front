@@ -60,6 +60,7 @@ class Shop {
         const button = document.createElement('button');
         button.innerText = 'Edytuj';
         button.dataset.docId= id;
+        button.classList.add('update-btn');
         button.addEventListener('click', (event) => {
             this.upDateItem(event.target.dataset.docId);
         });
@@ -73,6 +74,7 @@ class Shop {
         button.innerText = 'Usuń';
         button.dataset.docId= id;
         button.dataset.docRev = rev;
+        button.classList.add('delete-btn');
         button.addEventListener('click', this.removeItemHandler.bind(this));
         const cell = document.createElement('td');
         cell.appendChild(button);
